@@ -1,0 +1,316 @@
+d accord voici ca contient tous ? <?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.education-ontology.org/education-data-engineering#"
+     xml:base="http://www.education-ontology.org/education-data-engineering"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base="http://www.education-ontology.org/education-data-engineering#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.education-ontology.org/education-data-engineering"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#achievedSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.education-ontology.org/education-data-engineering#achievedSkill"/>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#assesses -->
+
+    <owl:ObjectProperty rdf:about="http://www.education-ontology.org/education-data-engineering#assesses"/>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#coversSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.education-ontology.org/education-data-engineering#coversSkill"/>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#enrolledIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.education-ontology.org/education-data-engineering#enrolledIn"/>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#hasResource -->
+
+    <owl:ObjectProperty rdf:about="http://www.education-ontology.org/education-data-engineering#hasResource">
+        <rdfs:domain rdf:resource="http://www.education-ontology.org/education-data-engineering#Module"/>
+        <rdfs:range rdf:resource="http://www.education-ontology.org/education-data-engineering#LearningResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#includesModule -->
+
+    <owl:ObjectProperty rdf:about="http://www.education-ontology.org/education-data-engineering#includesModule"/>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#producesProject -->
+
+    <owl:ObjectProperty rdf:about="http://www.education-ontology.org/education-data-engineering#producesProject">
+        <rdfs:domain rdf:resource="http://www.education-ontology.org/education-data-engineering#Learner"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.education-ontology.org/education-data-engineering#teaches"/>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#usesTechnology -->
+
+    <owl:ObjectProperty rdf:about="http://www.education-ontology.org/education-data-engineering#usesTechnology">
+        <rdfs:domain rdf:resource="http://www.education-ontology.org/education-data-engineering#Project"/>
+        <rdfs:range rdf:resource="http://www.education-ontology.org/education-data-engineering#Technology"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#Assessment -->
+
+    <owl:Class rdf:about="http://www.education-ontology.org/education-data-engineering#Assessment">
+        <rdfs:label xml:lang="en">Assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#BigDataModule -->
+
+    <owl:Class rdf:about="http://www.education-ontology.org/education-data-engineering#BigDataModule">
+        <rdfs:subClassOf rdf:resource="http://www.education-ontology.org/education-data-engineering#Module"/>
+        <rdfs:label xml:lang="en">Big Data Module</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#Course -->
+
+    <owl:Class rdf:about="http://www.education-ontology.org/education-data-engineering#Course">
+        <rdfs:label xml:lang="en">Course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#Exam -->
+
+    <owl:Class rdf:about="http://www.education-ontology.org/education-data-engineering#Exam">
+        <rdfs:subClassOf rdf:resource="http://www.education-ontology.org/education-data-engineering#Assessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#Instructor -->
+
+    <owl:Class rdf:about="http://www.education-ontology.org/education-data-engineering#Instructor">
+        <rdfs:label xml:lang="en">Instructor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#Learner -->
+
+    <owl:Class rdf:about="http://www.education-ontology.org/education-data-engineering#Learner">
+        <rdfs:label xml:lang="en">Learner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#LearningResource -->
+
+    <owl:Class rdf:about="http://www.education-ontology.org/education-data-engineering#LearningResource">
+        <rdfs:label xml:lang="en">Learning Resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#Module -->
+
+    <owl:Class rdf:about="http://www.education-ontology.org/education-data-engineering#Module">
+        <rdfs:label xml:lang="en">Module</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#PracticalProject -->
+
+    <owl:Class rdf:about="http://www.education-ontology.org/education-data-engineering#PracticalProject">
+        <rdfs:subClassOf rdf:resource="http://www.education-ontology.org/education-data-engineering#Project"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#ProgrammingModule -->
+
+    <owl:Class rdf:about="http://www.education-ontology.org/education-data-engineering#ProgrammingModule">
+        <rdfs:subClassOf rdf:resource="http://www.education-ontology.org/education-data-engineering#Module"/>
+        <rdfs:label xml:lang="en">Programming Module</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#Project -->
+
+    <owl:Class rdf:about="http://www.education-ontology.org/education-data-engineering#Project">
+        <rdfs:label xml:lang="en">Project</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#Quiz -->
+
+    <owl:Class rdf:about="http://www.education-ontology.org/education-data-engineering#Quiz">
+        <rdfs:subClassOf rdf:resource="http://www.education-ontology.org/education-data-engineering#Assessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#Skill -->
+
+    <owl:Class rdf:about="http://www.education-ontology.org/education-data-engineering#Skill">
+        <rdfs:label xml:lang="en">Skill</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#Technology -->
+
+    <owl:Class rdf:about="http://www.education-ontology.org/education-data-engineering#Technology">
+        <rdfs:label xml:lang="en">Technology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#DataEngineeringCourse -->
+
+    <owl:NamedIndividual rdf:about="http://www.education-ontology.org/education-data-engineering#DataEngineeringCourse">
+        <rdf:type rdf:resource="http://www.education-ontology.org/education-data-engineering#Course"/>
+        <includesModule rdf:resource="http://www.education-ontology.org/education-data-engineering#PythonModule"/>
+        <includesModule rdf:resource="http://www.education-ontology.org/education-data-engineering#SparkModule"/>
+        <rdfs:label xml:lang="en">Data Engineering Course</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#MrBenSalah -->
+
+    <owl:NamedIndividual rdf:about="http://www.education-ontology.org/education-data-engineering#MrBenSalah">
+        <rdf:type rdf:resource="http://www.education-ontology.org/education-data-engineering#Instructor"/>
+        <teaches rdf:resource="http://www.education-ontology.org/education-data-engineering#DataEngineeringCourse"/>
+        <rdfs:label xml:lang="en">MrBenSalah</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#OussemaProject1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.education-ontology.org/education-data-engineering#OussemaProject1">
+        <rdf:type rdf:resource="http://www.education-ontology.org/education-data-engineering#Project"/>
+        <usesTechnology rdf:resource="http://www.education-ontology.org/education-data-engineering#Python"/>
+        <rdfs:label xml:lang="en">Data Analysis Project</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#Python -->
+
+    <owl:NamedIndividual rdf:about="http://www.education-ontology.org/education-data-engineering#Python">
+        <rdf:type rdf:resource="http://www.education-ontology.org/education-data-engineering#Technology"/>
+        <rdfs:label xml:lang="en">Python</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#PythonBasics -->
+
+    <owl:NamedIndividual rdf:about="http://www.education-ontology.org/education-data-engineering#PythonBasics">
+        <rdf:type rdf:resource="http://www.education-ontology.org/education-data-engineering#Skill"/>
+        <rdfs:label xml:lang="en">Python Basics</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#PythonModule -->
+
+    <owl:NamedIndividual rdf:about="http://www.education-ontology.org/education-data-engineering#PythonModule">
+        <rdf:type rdf:resource="http://www.education-ontology.org/education-data-engineering#ProgrammingModule"/>
+        <coversSkill rdf:resource="http://www.education-ontology.org/education-data-engineering#PythonBasics"/>
+        <hasResource rdf:resource="http://www.education-ontology.org/education-data-engineering#PythonPDF"/>
+        <rdfs:label xml:lang="en">Python Module</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#PythonPDF -->
+
+    <owl:NamedIndividual rdf:about="http://www.education-ontology.org/education-data-engineering#PythonPDF">
+        <rdf:type rdf:resource="http://www.education-ontology.org/education-data-engineering#LearningResource"/>
+        <rdfs:label xml:lang="en">Intro to Python PDF</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#SparkModule -->
+
+    <owl:NamedIndividual rdf:about="http://www.education-ontology.org/education-data-engineering#SparkModule">
+        <rdf:type rdf:resource="http://www.education-ontology.org/education-data-engineering#BigDataModule"/>
+        <rdfs:label xml:lang="en">Spark Module</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.education-ontology.org/education-data-engineering#oussema -->
+
+    <owl:NamedIndividual rdf:about="http://www.education-ontology.org/education-data-engineering#oussema">
+        <rdf:type rdf:resource="http://www.education-ontology.org/education-data-engineering#Learner"/>
+        <achievedSkill rdf:resource="http://www.education-ontology.org/education-data-engineering#PythonBasics"/>
+        <enrolledIn rdf:resource="http://www.education-ontology.org/education-data-engineering#DataEngineeringCourse"/>
+        <producesProject rdf:resource="http://www.education-ontology.org/education-data-engineering#OussemaProject1"/>
+        <rdfs:label xml:lang="en">Oussema</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
+peut tu svp generer un fichier rdf contenant tout ceci (ne supprime rien ) en ajoutant autre instances + des owl (disjointwith ,restriction .............)
